@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;   
+    height: 100vh;   
+    background-color: rgb(149, 188, 233);
+}
+#vonal {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(157, 184, 184);
+    position: absolute;   
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    opacity: 0;
+}
+@keyframes ani {
+    0% {
+        background-color: rgb(157, 184, 184); top: 50%;
+        width: 0px;
+    }    
+    100% {
+        background-color: rgb(28, 128, 128); top: 50%;
+        width: 100%;
+    }
+    0% { 
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+p {
+    position: absolute;
+    color: rgb(157, 184, 184);
+    animation-name: pe;
+    animation-duration: 10s;
+    opacity: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes pe {
+    0% {
+        font-size: 1px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        font-size: 35px;
+    }
+    100% {
+      
+        text-align: center;
+        opacity: 0;
+    }
+}
+
+#loader {
+    background-image: url(/240_F_270622417_2gasOBUwqXdcpkgEl9PUihhhnQZeX4nQ.jpg);
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    animation: spin 8s linear;
+    opacity: 0;
+
+   
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); opacity: 0;}
+    50% {opacity: 1;}
+    100% { transform: rotate(1440deg); opacity: 0;}
+  }
+  
+#andi {
+ 
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader2 {
+    border: 16px solid #2979ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin2 8000ms linear;
+    opacity: 0;
+} 
+
+@keyframes spin2 {
+    0% { transform: rotate(0deg); opacity: 0;}
+    50% {opacity: 1;}
+    100% { transform: rotate(720deg); opacity: 0;}
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#feri { 
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#animation {
+    background-color: rgb(7, 7, 7);
+    width: auto;
+    height: 100vh;
+    animation-name: kezdo;   
+}
+
+
+
+#content {
+      visibility: hidden;
+      
+  }
+
+#content h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+#content nav {
+    position:relative;
+    top: 3%;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    display: inline;
+}
+
+#content nav a {
+    padding: 7px 15px;
+    background-color: rgb(221, 218, 252);
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+#content #grid > img {
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;   
+    
+    
+}
+
+#grid  {
+    width: 1000px;
+    height: 800px;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
